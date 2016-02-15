@@ -4,20 +4,21 @@
     <img src="images/yeoman.png" alt="I'm Yeoman"><br>
     Always a pleasure scaffolding your apps.
   </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
+  <p><a class="btn btn-lg btn-success" ng-href="#/feeds">Enter<span class="glyphicon glyphicon-ok"></span></a></p>
 </div>
 
-<div class="row marketing">
-  <h4>HTML5 Boilerplate</h4>
+<div class="row marketing">    
+ <div ng-repeat="luncher in lunches.lunchers">
+  <h4>{{luncher.name}}</h4>
+  <span ng-show="luncher.lunchingWith != null">
   <p>
-    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
+    {{luncher.name}} sharing the the lunch {{luncher.lunch.details}} with {{luncher.lunchingWith}}
   </p>
-
-  <h4>Angular</h4>
+    </span>
+    <span ng-show="luncher.lunchingWith == null">
   <p>
-    AngularJS is a toolset for building the framework most suited to your application development.
+    {{luncher.name}} offering the the lunch {{luncher.lunch.details}}!
   </p>
-
-  <h4>Karma</h4>
-  <p>Spectacular Test Runner for JavaScript.</p>
+</span>  
+</div>
 </div>

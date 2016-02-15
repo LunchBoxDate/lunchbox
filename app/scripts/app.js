@@ -8,7 +8,7 @@
  *
  * Main module of the application.
  */
-angular
+var lunchbox = angular
   .module('lunchboxApp', [
     'ngAnimate',
     'ngCookies',
@@ -21,13 +21,18 @@ angular
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
-        controller: 'MainCtrl',
-        controllerAs: 'main'
+        controller: 'LunchesCtrl',
+        controllerAs: 'lunches'
       })
       .when('/about', {
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl',
         controllerAs: 'about'
+      })
+    .when('/feeds', {
+        templateUrl: 'views/feeds.html',
+        controller: 'FeedsCtrl',
+        controllerAs: 'feeds'
       })
       .otherwise({
         redirectTo: '/'
