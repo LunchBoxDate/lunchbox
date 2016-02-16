@@ -8,14 +8,15 @@
  *
  * Main module of the application.
  */
-var lunchbox = angular
+angular
   .module('lunchboxApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'services'
   ])
   .config(function ($routeProvider) {
     $routeProvider
