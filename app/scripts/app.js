@@ -16,11 +16,17 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
+    'angular-jqcloud',
     'services'
   ])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
+        templateUrl: 'views/main.html',
+        controller: 'LunchesCtrl',
+        controllerAs: 'lunches'
+      })
+      .when('/main', {
         templateUrl: 'views/main.html',
         controller: 'LunchesCtrl',
         controllerAs: 'lunches'

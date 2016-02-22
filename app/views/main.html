@@ -1,14 +1,9 @@
-<div class="jumbotron">
-  <h1>'Hi Harshal!</h1>
-  <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#/feeds">Enter<span class="glyphicon glyphicon-ok"></span></a></p>
+<div class="jumbotron" ng-controller="CloudCtrl">
+<jqcloud words="words" width="500" height="350" steps="10" ></jqcloud>
 </div>
-
 <div class="row marketing">    
- <div ng-repeat="luncher in lunchers">
+    
+ <div ng-repeat="luncher in lunchers | filter:searchText">
   <h4>{{luncher.name}}</h4>
   <span ng-show="luncher.lunchingWith != null">
   <p>

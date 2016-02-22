@@ -81,3 +81,10 @@ body {
     border-bottom: 0;
   }
 }
+
+/* fonts */
+div.jqcloud {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: normal;
+}
