@@ -51,9 +51,25 @@
 		"name" : "Krishna",
 		"lunch" : {
 			"name" : "Rice and Curry",
-			"details" : "Rice and curry, what else?"
+			"details" : "Rice and lamb curry"
 		},
         "tags" : ["Indian", "Rice and Curry"],
+		"date" : "Dec 2, 2015",
+		"time" : "9:06:52 AM",
+		"location" : {
+			"latitude" : "-33.8657305",
+			"longitude" : "151.20732999999996",
+			"place" : "Victoria Market"
+		},
+		"lunchingWith" : null
+	}, {
+		"userName" : "peter",
+		"name" : "Peter Gladwell",
+		"lunch" : {
+			"name" : "Lasagne",
+			"details" : "Lasagne with Ragu"
+		},
+        "tags" : ["Italian", "Lasagne", "Pasta"],
 		"date" : "Dec 2, 2015",
 		"time" : "9:06:52 AM",
 		"location" : {
